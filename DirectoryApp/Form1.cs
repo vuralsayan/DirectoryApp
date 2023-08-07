@@ -95,5 +95,21 @@ namespace DirectoryApp
             }
 
         }
+
+        private void BtnGüncelle_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("Update KISILER set AD=@P1, SOYAD=@P2, TELEFON=@P3, MAIL=@P4 where ID=@P6", baglanti);
+            komut.Parameters.AddWithValue("@P1", TXtAd.Text);   
+            komut.Parameters.AddWithValue("@P2", TxtSoyad.Text);
+            komut.Parameters.AddWithValue("@P3", MskTel.Text);
+            komut.Parameters.AddWithValue("@P4", TxtMail.Text);
+            komut.Parameters.AddWithValue("@P6", TxtID.Text);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Kişi Rehberde Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Listele();
+            Temizle();
+        }
     }
 }

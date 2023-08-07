@@ -130,6 +130,7 @@
             this.BtnGüncelle.TabIndex = 6;
             this.BtnGüncelle.Text = "GÜNCELLE";
             this.BtnGüncelle.UseVisualStyleBackColor = true;
+            this.BtnGüncelle.Click += new System.EventHandler(this.BtnGüncelle_Click);
             // 
             // BtnSil
             // 
