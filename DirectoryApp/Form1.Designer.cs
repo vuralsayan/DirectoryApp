@@ -114,32 +114,41 @@
             // 
             // BtnTemizle
             // 
+            this.BtnTemizle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(88)))), ((int)(((byte)(136)))));
+            this.BtnTemizle.FlatAppearance.BorderSize = 0;
+            this.BtnTemizle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnTemizle.Location = new System.Drawing.Point(299, 277);
             this.BtnTemizle.Name = "BtnTemizle";
             this.BtnTemizle.Size = new System.Drawing.Size(129, 39);
             this.BtnTemizle.TabIndex = 8;
             this.BtnTemizle.Text = "TEMİZLE";
-            this.BtnTemizle.UseVisualStyleBackColor = true;
+            this.BtnTemizle.UseVisualStyleBackColor = false;
             this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
             // BtnGüncelle
             // 
+            this.BtnGüncelle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(88)))), ((int)(((byte)(136)))));
+            this.BtnGüncelle.FlatAppearance.BorderSize = 0;
+            this.BtnGüncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGüncelle.Location = new System.Drawing.Point(164, 277);
             this.BtnGüncelle.Name = "BtnGüncelle";
             this.BtnGüncelle.Size = new System.Drawing.Size(129, 39);
             this.BtnGüncelle.TabIndex = 6;
             this.BtnGüncelle.Text = "GÜNCELLE";
-            this.BtnGüncelle.UseVisualStyleBackColor = true;
+            this.BtnGüncelle.UseVisualStyleBackColor = false;
             this.BtnGüncelle.Click += new System.EventHandler(this.BtnGüncelle_Click);
             // 
             // BtnSil
             // 
+            this.BtnSil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(88)))), ((int)(((byte)(136)))));
+            this.BtnSil.FlatAppearance.BorderSize = 0;
+            this.BtnSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSil.Location = new System.Drawing.Point(299, 232);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(129, 39);
             this.BtnSil.TabIndex = 7;
             this.BtnSil.Text = "SİL";
-            this.BtnSil.UseVisualStyleBackColor = true;
+            this.BtnSil.UseVisualStyleBackColor = false;
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // label5
@@ -188,12 +197,15 @@
             // 
             // BtnEkle
             // 
+            this.BtnEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(88)))), ((int)(((byte)(136)))));
+            this.BtnEkle.FlatAppearance.BorderSize = 0;
+            this.BtnEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEkle.Location = new System.Drawing.Point(164, 232);
             this.BtnEkle.Name = "BtnEkle";
             this.BtnEkle.Size = new System.Drawing.Size(129, 39);
             this.BtnEkle.TabIndex = 5;
             this.BtnEkle.Text = "EKLE";
-            this.BtnEkle.UseVisualStyleBackColor = true;
+            this.BtnEkle.UseVisualStyleBackColor = false;
             this.BtnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
             // 
             // MskTel
@@ -208,6 +220,7 @@
             // TxtID
             // 
             this.TxtID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(165)))), ((int)(((byte)(213)))));
+            this.TxtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtID.Enabled = false;
             this.TxtID.Location = new System.Drawing.Point(164, 48);
             this.TxtID.Name = "TxtID";
