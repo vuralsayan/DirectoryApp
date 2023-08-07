@@ -73,5 +73,27 @@ namespace DirectoryApp
             MskTel.Text = dataGridView1.Rows[secilen].Cells[3].Value.ToString();
             TxtMail.Text = dataGridView1.Rows[secilen].Cells[4].Value.ToString();
         }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Seçili kişiyi rehberden silmek istediğinize emin misiniz?", "Silme Onayı", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("Delete From KISILER Where ID=@P1",baglanti);
+                komut.Parameters.AddWithValue("@P1", TxtID.Text);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                MessageBox.Show("Kişi Rehberden Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Listele();
+                Temizle();
+            }
+            else
+            {
+                MessageBox.Show("Kişi Silme İşlemi İptal Edildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
     }
 }

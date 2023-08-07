@@ -139,6 +139,7 @@
             this.BtnSil.TabIndex = 7;
             this.BtnSil.Text = "SİL";
             this.BtnSil.UseVisualStyleBackColor = true;
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // label5
             // 
