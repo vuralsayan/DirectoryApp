@@ -36,6 +36,7 @@ namespace DirectoryApp
             TxtSoyad.Text = "";
             MskTel.Text = "";
             TXtAd.Focus();
+            TxtMail.Text = "";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -61,6 +62,16 @@ namespace DirectoryApp
         private void BtnTemizle_Click(object sender, EventArgs e)
         {
             Temizle();
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+            TxtID.Text = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
+            TXtAd.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
+            TxtSoyad.Text = dataGridView1.Rows[secilen].Cells[2].Value.ToString();
+            MskTel.Text = dataGridView1.Rows[secilen].Cells[3].Value.ToString();
+            TxtMail.Text = dataGridView1.Rows[secilen].Cells[4].Value.ToString();
         }
     }
 }
